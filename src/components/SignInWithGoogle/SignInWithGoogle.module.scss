@@ -1,0 +1,32 @@
+.button {
+    position: relative;
+    font-size: 18px;
+    background: #f10b0b;
+    border-radius: 3px;
+    color: #ffffff;
+    width: 300px;
+    padding: 9px 0 9px 80px;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    img {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 70px;
+        background: #ba1f1f;
+        display: block;
+        border-radius: 3px 0 0 3px;
+    }
+}

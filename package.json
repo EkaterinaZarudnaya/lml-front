@@ -1,0 +1,40 @@
+{
+  "name": "lml-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:codetempox/tpps-lml.git",
+  "author": "simplycodepix",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next -p 8040",
+    "build": "next build",
+    "start": "next start -p 8040",
+    "storybook": "start-storybook"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "file-loader": "^6.0.0",
+    "moment": "^2.24.0",
+    "next": "latest",
+    "next-images": "^1.4.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.0",
+    "url-loader": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@storybook/addon-backgrounds": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.14",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3"
+  }
+}

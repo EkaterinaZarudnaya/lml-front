@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 0 16px;
+}
+
+.title > a {
+    color: #000000;
+}

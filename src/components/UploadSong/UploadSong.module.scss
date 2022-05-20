@@ -1,0 +1,111 @@
+.checkbox {
+    cursor: pointer;
+    user-select: none;
+    & > input[type="checkbox"] {
+        display: none;
+        &:checked ~ span .check {
+            display: block;
+        }
+    }
+
+    span {
+        padding: 0 45px 0 0;
+        font-size: 20px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 30px;
+            height: 30px;
+            background: #efefef;
+            border-radius: 10px;
+        }
+    }
+}
+
+.check {
+    display: none;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.group {
+    margin: 0 0 24px;
+    label {
+        font-size: 20px;
+        display: block;
+        margin: 0 0 5px;
+    }
+    input,
+    select {
+        width: 100%;
+        display: block;
+        border: none;
+        background: #efefef;
+        border-radius: 10px;
+        height: 48px;
+        padding: 0 19px;
+        font-size: 20px;
+        color: #868585;
+        font-family: "Poppins", sans-serif;
+        &::placeholder {
+            font-size: 20px;
+            color: #868585;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
+
+.button {
+    background: #ffa05b;
+    border-radius: 10px;
+    font-size: 25px;
+    line-height: 1;
+    padding: 10px 45px;
+}
+
+.buttonWrap {
+    text-align: center;
+    padding: 30px 0 0;
+}
+
+.title {
+    font-size: 30px;
+    margin: 0 0 35px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.playlist {
+    width: 178px;
+    margin: 0 0 15px;
+    position: relative;
+    display: block;
+}
+
+.playlistImg {
+    width: 178px;
+    height: 178px;
+    display: flex;
+    border-radius: 12px;
+    background: #e7e6e6;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+}

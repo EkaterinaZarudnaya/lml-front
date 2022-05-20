@@ -1,0 +1,24 @@
+.wrapper {
+    margin: 0 0 16px;
+    &.small {
+        padding: 0 70px;
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.songWrap {
+    margin: 0 0 10px;
+}
+
+.col1 {
+    width: 100%;
+}
+
+.col2 {
+    width: calc(50% - 5px);
+}

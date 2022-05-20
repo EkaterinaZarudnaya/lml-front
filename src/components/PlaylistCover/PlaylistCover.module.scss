@@ -1,0 +1,44 @@
+.playlistCover {
+    height: 178px;
+    width: 178px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.playlistPrivate {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50px;
+    }
+}
+
+.playlistAddCover {
+    position: absolute;
+    width: 142px;
+    height: 33px;
+    background: rgba(69, 69, 69, 0.3);
+    border-radius: 10px;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+.playlistAddCoverText {
+    position: absolute;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}

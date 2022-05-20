@@ -1,0 +1,104 @@
+.content {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #c8baa5;
+}
+
+.logo {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 45px 0 0;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.nav {
+    padding: 0 0 0 60px;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li:not(:last-of-type) {
+        margin-right: 20px;
+    }
+    a {
+        font-size: 20px;
+        color: #000000;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 145px;
+}
+
+.profileLike {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+.profileMusic {
+    font-size: 20px;
+    color: #000000;
+    margin: 0 25px 0 0;
+}
+.profileImage {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+$menu-background: #fff;
+
+.menu {
+    position: relative;
+    &:hover {
+        .menuContent {
+            display: block;
+        }
+    }
+}
+
+.menuContent {
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, 0);
+    padding-top: 10px;
+    display: none;
+}
+
+.menuList {
+    min-width: 120px;
+    background: $menu-background;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(#000000, 0.25);
+    margin: 0;
+    padding: 0;
+    & > li {
+        margin: 0;
+        padding: 5px 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
